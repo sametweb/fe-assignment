@@ -1,5 +1,6 @@
-import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
+// Global imports
 import { Card, Col, Statistic } from "antd";
+import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
 
 interface IStatsCardProps {
   name: string;

@@ -2,6 +2,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Input, Space, Table } from "antd";
+import { SearchOutlined } from "@ant-design/icons";
 
 // Local imports
 import { StateContext } from "../App";
@@ -9,7 +10,6 @@ import { StateContext } from "../App";
 // Type imports
 import { CountriesData } from "../types";
 import { ColumnsType } from "antd/lib/table";
-import { SearchOutlined } from "@ant-design/icons";
 
 const Countries = () => {
   const [search, setSearch] = useState<string>("");

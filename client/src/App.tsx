@@ -1,15 +1,18 @@
 // Global imports
-import { createContext, Dispatch, useReducer } from "react";
+import { createContext, useReducer } from "react";
 import { Route } from "react-router-dom";
 import Axios from "axios";
+import { Button, Spin } from "antd";
 
 // Local imports
 import reducer from "./context/reducer";
 import Countries from "./components/Countries";
 import Country from "./components/Country";
-import { Button, Input, Spin } from "antd";
 import Header from "./components/Header";
+
+// Type imports
 import { ActionType, StateType } from "./types";
+import { Dispatch } from "react";
 
 const __initialState = {
   summary: {

@@ -1,10 +1,13 @@
+// Global imports
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import "antd/dist/antd.css";
+
+// Local imports
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "antd/dist/antd.css";
 import "./style.css";
-import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <StrictMode>

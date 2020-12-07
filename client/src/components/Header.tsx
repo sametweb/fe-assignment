@@ -1,6 +1,9 @@
-import { PageHeader } from "antd";
+// Global imports
 import React, { useContext } from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
+import { PageHeader } from "antd";
+
+// Local imports
 import { StateContext } from "../App";
 
 function Header() {

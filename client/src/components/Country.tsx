@@ -2,16 +2,16 @@
 import { useContext, useEffect, useState } from "react";
 import { useRouteMatch } from "react-router-dom";
 import Chart from "react-apexcharts";
-import { AxiosResponse } from "axios";
+import { Spin } from "antd";
 
 // Local imports
 import CountryStats from "./CountryStats";
 import apiRequest from "../apiRequest";
+import { StateContext } from "../App";
 
 // Type imports
 import { ApexOptions, CountryData } from "../types";
-import { Spin } from "antd";
-import { StateContext } from "../App";
+import { AxiosResponse } from "axios";
 
 const apiURL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
