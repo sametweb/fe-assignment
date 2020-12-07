@@ -84,7 +84,7 @@ const Country = () => {
           payload: error.data.response.errorMessage,
         });
       });
-  }, [params.slug]);
+  }, [params.slug, dispatch]);
 
   if (options.series.length === 0) {
     return (
